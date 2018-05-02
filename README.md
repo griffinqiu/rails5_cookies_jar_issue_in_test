@@ -37,31 +37,21 @@ Finished in 0.157933s, 12.6636 runs/s, 12.6636 assertions/s.
 ```
 
 ``` zsh
-➜  rails5_cookies_jar_issue_in_test git:(master) ✗ rails test --seed 12133
-Running via Spring preloader in process 44614
+➜  rails5_cookies_jar_issue_in_test git:(master) rails test --seed 12321
+Running via Spring preloader in process 45099
 /Users/griffin/github/rails5_cookies_jar_issue_in_test/db/schema.rb doesn't
 exist yet. Run `rails db:migrate` to create it, then try again. If you do not
 intend to use a database, you should instead alter
 /Users/griffin/github/rails5_cookies_jar_issue_in_test/config/application.rb to
 limit the frameworks that will be loaded.
-Run options: --seed 12133
+Run options: --seed 12321
 
 # Running:
 
-"integration test"
-."controller test"
-F
+"controller test"
+."integration test"
+.
 
-Failure:
-SessionsControllerTest#test_should_be_keep_site_tracking_id_after_visit_login
-[/Users/griffin/github/rails5_cookies_jar_issue_in_test/test/controllers/sessions_controller_test.rb:8]:
-Expected: "123"
-  Actual: "tracking_id_321"
-
-
-bin/rails test test/controllers/sessions_controller_test.rb:4
-
-
-
-Finished in 0.157933s, 12.6636 runs/s, 12.6636 assertions/s.
+Finished in 0.101819s, 19.6427 runs/s, 19.6427 assertions/s.
+2 runs, 2 assertions, 0 failures, 0 errors, 0 skips
 ```
